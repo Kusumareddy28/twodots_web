@@ -2,31 +2,32 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>quick-message-relay</title>
-    <meta name="description" content="Lovable Generated Project" />
-    <meta name="author" content="Lovable" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0"
+    />
+    <title>Two Dots</title>
+    <meta name="description" content="Kusuma Reddyvari" />
+    <meta name="author" content="Kusuma" />
 
-    <!-- favicon: relative so it lives under /twodots_web/ -->
+    <!-- favicon: relative so it loads under /twodots_web/ on GH Pages -->
     <link rel="icon" href="favicon.ico" />
-
-    <!-- your OpenGraph / Twitter tags… -->
   </head>
 
   <body>
     <div id="root"></div>
 
-    <!-- First, your GPT‑engineer script (deferred so it waits on the DOM too) -->
-    <script
-      src="https://cdn.gpteng.co/gptengineer.js"
-      type="module"
-      defer
-    ></script>
-
-    <!-- THEN your Vite entrypoint, deferred and in the body -->
+    <!-- Vite’s entry: will be rewritten to /twodots_web/assets/index-*.js on build -->
     <script
       type="module"
       src="/src/main.tsx"
+      defer
+    ></script>
+
+    <!-- Your GPT‑Engineer script, deferred too -->
+    <script
+      src="https://cdn.gpteng.co/gptengineer.js"
+      type="module"
       defer
     ></script>
   </body>
