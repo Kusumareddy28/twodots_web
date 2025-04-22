@@ -8,7 +8,7 @@ import { componentTagger } from "lovable-tagger";
 const repoName = "twodots_web";
 
 export default defineConfig(({ mode }) => ({
-  base: `/${repoName}/`, // 👈 required for GitHub Pages
+  base: '/twodots_web/', // 👈 required for GitHub Pages
   server: {
     host: "::",
     port: 8080,
