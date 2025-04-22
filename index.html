@@ -7,20 +7,27 @@
     <meta name="description" content="Lovable Generated Project" />
     <meta name="author" content="Lovable" />
 
-    <meta property="og:title" content="quick-message-relay" />
-    <meta property="og:description" content="Lovable Generated Project" />
-    <meta property="og:type" content="website" />
-    <meta property="og:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <!-- favicon: relative so it lives under /twodots_web/ -->
+    <link rel="icon" href="favicon.ico" />
 
-    <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:site" content="@lovable_dev" />
-    <meta name="twitter:image" content="https://lovable.dev/opengraph-image-p98pqg.png" />
+    <!-- your OpenGraph / Twitter tags… -->
   </head>
 
   <body>
     <div id="root"></div>
-    <!-- IMPORTANT: DO NOT REMOVE THIS SCRIPT TAG OR THIS VERY COMMENT! -->
-    <script src="https://cdn.gpteng.co/gptengineer.js" type="module"></script>
-    <script type="module" src="/src/main.tsx"></script>
+
+    <!-- First, your GPT‑engineer script (deferred so it waits on the DOM too) -->
+    <script
+      src="https://cdn.gpteng.co/gptengineer.js"
+      type="module"
+      defer
+    ></script>
+
+    <!-- THEN your Vite entrypoint, deferred and in the body -->
+    <script
+      type="module"
+      src="/src/main.tsx"
+      defer
+    ></script>
   </body>
 </html>
